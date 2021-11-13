@@ -86,7 +86,7 @@ if __name__ == '__main__':
   #Level 1 
 
   pn = duplicate(platform_normal, position = (-32.5,35,-43), rotation = (0, 0, 0))
-  pn2 = duplicate(platform_normal, position = (-28.5,35,-37), rotation = (0, 0, 0))
+  #pn2 = duplicate(platform_normal, position = (-28.5,35,-37), rotation = (0, 0, 0))
   pn3 = duplicate(platform_normal, position = (-28,35,-44.5), rotation = (0, 90, 0))
   pn4 = duplicate(platform_normal, position = (-22.5,35,-44), rotation = (0, 0, 0))
   pn5 = duplicate(platform_normal, position = (-17.5,35,-44), rotation = (0, 0, 0))
@@ -107,14 +107,43 @@ if __name__ == '__main__':
 
   pag7 = duplicate(platform_antigrav, position = (31,45,-42.5), rotation = (0, 90, 0))
 
-  pn10 = duplicate(platform_antigrav, position = (37,35,-41.5), rotation = (0, 90, 0))
+  pn10 = duplicate(platform_normal, position = (37,35,-41.5), rotation = (0, 90, 0))
 
   pag8 = duplicate(platform_antigrav, position = (42,45,-39.5), rotation = (0, 90, 0))
 
+  #Level 2
 
+  pn11 = duplicate(platform_normal, position = (45.5,35,-37), rotation = (0, 0, 0))
+  pn12 = duplicate(platform_normal, position = (44.5,35,-32), rotation = (0, 0, 0))
+  pn13 = duplicate(platform_normal, position = (40,35,-26.5), rotation = (0, 90, 0))
+  pn14 = duplicate(platform_normal, position = (35.5,35,-24), rotation = (0, 0, 0))
+
+  pne1 = duplicate(platform_normal, position = (29,35,-24), rotation = (0, 0, 0))
+  pne2 = duplicate(platform_normal, position = (23,35,-24), rotation = (0, 0, 0))
+
+  pag9 = duplicate(platform_antigrav, position = (19,45,-26.5), rotation = (0, 90, 0))
+  pag10 = duplicate(platform_antigrav, position = (15,45,-25.5), rotation = (0, 90, 0))
+  pag11 = duplicate(platform_antigrav, position = (10.5,45,-24), rotation = (0, 0, 0))
+  pag12 = duplicate(platform_antigrav, position = (9.5,45,-19), rotation = (0, 0, 0))
+
+  pn15 = duplicate(platform_normal, position = (3,35,-17.5), rotation = (0, 90, 0))
+  pn16 = duplicate(platform_normal, position = (0.5,35,-20), rotation = (0, 0, 0))
+  pn17 = duplicate(platform_normal, position = (-6,35,-22.5), rotation = (0, 90, 0))
+
+  pag13 = duplicate(platform_antigrav, position = (-12,45,-22.5), rotation = (0, 90, 0))
+  pag14 = duplicate(platform_antigrav, position = (-18,45,-22.5), rotation = (0, 90, 0))
+  pag15 = duplicate(platform_antigrav, position = (-23,45,-25.5), rotation = (0, 90, 0))
+
+  pn18 = duplicate(platform_normal, position = (-27,35,-29.5), rotation = (0, 90, 0))
+  pn19 = duplicate(platform_normal, position = (-32,35,-24.5), rotation = (0, 90, 0))
+
+  pag14 = duplicate(platform_antigrav, position = (-32.5,45,-29), rotation = (0, 0, 0))
+  pag15 = duplicate(platform_antigrav, position = (-33.5,45,-20), rotation = (0, 0, 0))
+
+  pc1 = duplicate(platform_checkpoint, position = (-48,45,-15), rotation = (0, 0, 0))
 
   #Create a First Person Controller and place it in the corner of the map
-  player = FirstPersonController(collider ='box', model = 'cube', speed = 100, y=5, position = (-42, 39, -43))
+  player = FirstPersonController(collider ='box', model = 'cube', speed = 5, y=5, position = (-42,35,-43))
 
   #create a lime green target cube at a random location
   target = Entity(model = 'cube',
