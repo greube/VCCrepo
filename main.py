@@ -33,7 +33,7 @@ if __name__ == '__main__':
   ground = Entity(model = 'cube',
                   scale = (100,2,100),
                   texture = 'white_cube',
-                  color = color.red.tint(-0.2),
+                  color = color.white.tint(-0.2),
                   collider = 'box',
                   texture_scale = (100,100))
 
@@ -140,10 +140,48 @@ if __name__ == '__main__':
   pag14 = duplicate(platform_antigrav, position = (-32.5,45,-29), rotation = (0, 0, 0))
   pag15 = duplicate(platform_antigrav, position = (-33.5,45,-20), rotation = (0, 0, 0))
 
-  pc1 = duplicate(platform_checkpoint, position = (-48,45,-15), rotation = (0, 0, 0))
+  pc1 = duplicate(platform_checkpoint, position = (-35,45,-15), rotation = (0, 0, 0))
+
+  #Level 3
+
+  pn20 = duplicate(platform_normal, position = (-33.5,35,-9), rotation = (0, 0, 0))
+  pn21 = duplicate(platform_normal, position = (-28,35,-5.5), rotation = (0, 90, 0))
+  pn22 = duplicate(platform_normal, position = (-24,35,-4.5), rotation = (0, 90, 0))
+  pn23 = duplicate(platform_normal, position = (-18,35,-5.5), rotation = (0, 90, 0)) 
+
+  pag16 = duplicate(platform_antigrav, position = (-14.5,45,-1), rotation = (0, 0, 0)) 
+  pag17 = duplicate(platform_antigrav, position = (-12.5,45,6), rotation = (0, 0, 0))
+  pag18 = duplicate(platform_antigrav, position = (-9,45,9.5), rotation = (0, 90, 0))
+  pag19 = duplicate(platform_antigrav, position = (-5.5,45, 4), rotation = (0, 0, 0))
+
+  pn24 = duplicate(platform_normal, position = (-2,35,-1.5), rotation = (0, 90, 0)) 
+  pag20 = duplicate(platform_antigrav, position = (-4,45, 1.5), rotation = (0, 90, 0)) 
+
+  pn25 = duplicate(platform_normal, position = (-0.5,35,6), rotation = (0, 0, 0)) 
+  pag21 = duplicate(platform_antigrav, position = (4,45, 7.5), rotation = (0, 90, 0)) 
+
+  pn26 = duplicate(platform_normal, position = (10.5,35,4), rotation = (0, 0, 0)) 
+  pag22 = duplicate(platform_antigrav, position = (12,45,-0.5), rotation = (0, 90, 0)) 
+
+  pn27 = duplicate(platform_normal, position = (15.5,35,-4), rotation = (0, 0, 0)) 
+  pag23 = duplicate(platform_antigrav, position = (19,45,-6.5), rotation = (0, 90, 0)) 
+
+  pn28 = duplicate(platform_normal, position = (24,35,-9.5), rotation = (0, 90, 0)) 
+  pag24 = duplicate(platform_antigrav, position = (28.5,45,-3), rotation = (0, 0, 0)) 
+
+  pn29 = duplicate(platform_normal, position = (24,35,-1.5), rotation = (0, 90, 0)) 
+  pag25 = duplicate(platform_antigrav, position = (23.5,45, 6), rotation = (0, 0, 0)) 
+
+  pn30 = duplicate(platform_normal, position = (27,35,7.5), rotation = (0, 90, 0)) 
+
+  pc2 = duplicate(platform_checkpoint, position = (30,45,11), rotation = (0, 0, 0))
+
+  #Level 4
+
+  
 
   #Create a First Person Controller and place it in the corner of the map
-  player = FirstPersonController(collider ='box', model = 'cube', speed = 5, y=5, position = (-42,35,-43))
+  player = FirstPersonController(collider ='box', model = 'cube', speed = 5, y=5, position = (30,45,-11))
 
   #create a lime green target cube at a random location
   target = Entity(model = 'cube',
